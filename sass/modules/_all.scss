@@ -1,0 +1,260 @@
+* {
+	box-sizing: border-box;
+}
+
+[class*='col-'] {
+	float: left;
+}
+$grid-size: 12;
+@for $i from 1 through $grid-size {
+	.col-#{$i} {
+		width: $i/$grid-size * 100%;
+	}
+}
+
+.container {
+	width: 930px;
+	margin: 0 auto;
+}
+
+.row {
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+	height: 82px;
+}
+
+.logo {
+	width: 175px;
+	height: 43px;
+	background-image: url("../images/logo.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.contactCent {
+	background-image: url("../images/4-layers.png");
+	width: 302px;
+	height: 68px;
+	background-repeat: no-repeat;
+	margin-left: 110px;
+}
+
+.circle3 {
+	background-image: url("../images/3-smalCircle.png");
+	width: 79px;
+	height: 29px;
+	float: right;
+	background-repeat: no-repeat;
+}
+
+li:nth-of-type(1) {
+	padding-right: 10px;
+}
+
+li:nth-of-type(2) {
+	padding-right: 10px;
+}
+
+li:nth-of-type(3) {
+	padding-right: 10px;
+}
+
+li:nth-of-type(4) {
+	padding-right: 10px;
+}
+
+li:nth-of-type(5) {
+	padding-right: 10px;
+}
+
+nav {
+	display: inline;
+
+	li {
+		text-decoration: none;
+		display: inline-block;
+
+		a {
+			font-size: 14px;
+			color: white;
+			justify-content: space-between;
+		}
+	}
+}
+
+.sectionOne {
+	background-image: url("../images/layer-2.png");
+}
+
+.topic {
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.section1text {
+	color: white;
+	justify-content: space-between;
+}
+
+.picOne {
+	background-image: url("../images/warstwa-4.png");
+	padding-top: (200/460)*50%;
+	background-position: 0 -53px;
+	background-repeat: no-repeat;
+}
+
+.topic2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.float-left {
+	float: left;
+}
+
+.pic2sec {
+	margin: 15px;
+}
+
+.txt2 {
+	padding: 15px;
+}
+
+.sectionThree {
+	background-color: black;
+	width: 100%;
+}
+
+.tex3sec {
+	margin: 10px 10px 100px;
+}
+
+.col-4 {
+	justify-content: flex-start;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.subject4 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.text4p {
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+
+.raspberries {
+	overflow: hidden;
+	height: 250px;
+	width: 100%;
+}
+
+.text7p {
+	padding-top: 20px;
+}
+
+.text8p {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+.glob {
+	position: relative;
+}
+
+.imgGlob {
+	position: absolute;
+	padding-top: 80px;
+}
+
+.sectionSeven {
+	background-color: black;
+	width: 100%;
+}
+
+.cookie {
+	background-image: url("../Images/warstwa-6.png");
+	width: 100%;
+	height: 308px;
+	background-repeat: no-repeat;
+}
+
+.yummyBox {
+	color: white;
+	height: 308px;
+}
+
+.yummy {
+	font-size: 28px;
+	padding-top: 60px;
+	padding-left: 80px;
+}
+
+.donut {
+	margin-top: 25px;
+	padding-left: 20px;
+}
+
+.read {
+	color: white;
+	padding-left: 400px;
+}
+
+.sectionEight {
+	font-size: 28px;
+	color: grey;
+}
+
+.phone {
+	width: 50%;
+	padding-top: 50px;
+}
+
+.place {
+	width: 50%;
+	padding-top: 50px;
+}
+
+.nine {
+	color: grey;
+	height: 100px;
+}
+
+.place {
+	padding-left: 30px;
+}
+
+.border {
+	border-top: 1px solid grey;
+	margin-top: 40px;
+	padding-bottom: 15px;
+}
+
+.textTootsy {
+	justify-content: center;
+	display: flex;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+	padding-left: 15px;
+}
+
+.lighten {
+	color: lighten(grey,20%);
+	flex-flow: wrap;
+}
